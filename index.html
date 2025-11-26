@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimal AI Chat</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="title">AI 对话</div>
+        <div class="tools">
+          <button id="set-key" class="btn">更新密钥</button>
+          <div class="dropdown" id="base-dd">
+            <button id="set-base" class="btn">服务地址</button>
+            <div class="menu" id="base-menu">
+              <button id="base-cn" class="btn">北京</button>
+              <button id="base-intl" class="btn">新加坡</button>
+            </div>
+          </div>
+          <button id="clear" class="btn">清空</button>
+        </div>
+      </header>
+      <main id="chat" class="chat"></main>
+      <footer class="footer">
+        <textarea id="input" class="input" rows="2" placeholder="输入你的问题..."></textarea>
+        <button id="send" class="btn primary">发送</button>
+      </footer>
+    </div>
+    <script type="module" src="./app.js"></script>
+  </body>
+  </html>
