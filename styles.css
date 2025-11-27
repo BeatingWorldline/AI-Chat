@@ -61,18 +61,22 @@ body {
 .chips {
   display: flex;
   gap: 8px;
-  overflow: auto;
+  flex-wrap: wrap;
+  overflow: visible;
   justify-content: center;
 }
 .chip {
   font-size: 14px;
-  height: 36px;
-  padding: 0 14px;
-  line-height: 34px;
+  display: inline-block;
+  min-height: 36px;
+  padding: 6px 14px;
+  line-height: 1.4;
   border: 1px solid #ddd;
   border-radius: 16px;
   cursor: pointer;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  max-width: 100%;
 }
 .chip:hover {
   background: #eaf2ff;
